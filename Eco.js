@@ -74,12 +74,12 @@ function validName() {
     let y = document.forms["OrderCup"]["colors"].value && document.forms["OrderCup"]["amount"].value;
     if (x === ""){
         alert("Full name required");
-    }
-        if(y === ""){
-            alert("Please complete your order");
     } else {
-        alert("Order sent!");
+        alert("Order Sent!");
     }
+    if (y === ""){
+            alert("Please complete your order");
+    } 
 }
 
 // Total and new total if discount applied
