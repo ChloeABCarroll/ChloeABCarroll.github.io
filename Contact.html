@@ -1,0 +1,97 @@
+<!-- This is a contact page -->
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+         <!--[if lte IE9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-
+        mediaqueries.js"></script>
+        <![endif]-->
+        <title>Eco Ireland - Contact </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="Eco.js"></script>
+        <link rel="stylesheet" href="Eco.css">
+    </head>
+    <body> 
+        <div class ="header">
+            <div class="container">    
+            <!-- Functioning side nav bar  - 'Home' is included in all other pages to allow a clear return to home menu option-->
+                <div>
+                    <span style="font-size:30px; cursor:pointer" onClick="openNav()">&#9776; Menu</span>
+                </div>
+                <div id="leftSideNav" class="sidenav">
+                    <li>
+                        <a href="#" class="closbtn" onClick="closeNav()">&#9776; Close Menu</a>
+                        <a href="index.html"> Return Home </a>
+                        <a href="About.html"> About </a>
+                        <a href="order.html"> Order a Sustainable Cup </a>
+                        <a href="Impact.html"> Impact Calculator </a>
+                        <a href="Contact.html"> Contact Us </a>
+                    </li>
+                </div>
+                <div id="logo">
+                    <a href="index.html" class="logo"> <img src="eco.png" width="150px" height="140px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="mainBody">
+            <section>
+                <form name="myContact" class="contact" action="mailto:chloeanncarrolll@gmail.com" method="post">
+                    <tr>
+                    <label for="fname"> First Name </label> 
+                    <input type="text" placeholder="First Name" name="fname">
+                    <br>
+                    <label for="lname"> Last Name </label> 
+                    <input type="text" id="lname" placeholder="Last Name" name="lname">
+                    <br>
+                    <label for="email"> Email </label>
+                    <input type="text" placeholder="Enter email address" name="email" id="email">
+                    <br>
+                    <label for="country"> Country </label>
+                    <select id="country" name ="country">
+                        <option value="Ireland">Ireland</option>
+                        <option value="Rest of World">Rest of World</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="subject"> Subject </label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <br>
+                    <textarea id ="message" name="message" placeholder="Write your query here"style="width:400px; height:120px;"></textarea>
+                    <br>
+                    <input type="button" class="btn" id="submitButton" value="Submit" onclick="return validContact()">
+                </form>
+            </section>
+        </div>
+    </body>
+    <!--  Social media links in the footer  -->
+    <footer>
+        <div class ="container">
+            <div class="row">
+                <div class="footer col-md-6">
+                    <form name ="mail">
+                        <div>
+                            <label for="email"> Sign Up to Our Mailing List </label>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Enter email address" name="email" id="email">
+                            <button type="button" value="Submit" class="btn" onClick="return signedUp()"> Sign Up </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer col-md-6">
+                    <ul>
+                        <li class="liFixed"><a href="https://www.facebook.com" class ="fab fa-facebook-f"></a></li>
+                        <li class="liFixed"><a href="https://twitter.com/i/flow/login" class="fab fa-twitter"></a></li>
+                        <li class="liFixed"><a href="https://www.instagram.com/" class ="fab fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,265 @@
+/*Media Queries*/
+
+@media (min-width: 768px) {
+    .container {
+        width: 732px;;
+    } 
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 1000px;
+    } 
+    .column {
+        width: 100%;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .container {
+        width: 1400px;
+    } 
+}
+
+/*Header info */
+
+.header {
+    background-color: yellowgreen;
+}
+
+/*Home page info*/
+
+.logo {
+    display: grid;
+    place-items: center;
+}
+
+.homeFont {
+    font-family: sans-serif;
+    font-size: 26px;
+}
+
+#world {
+    background-image: url(earth.png);
+}
+
+/* Side Nav Bar Styling*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: yellowgreen;
+    list-style-type: none;
+    overflow-x: auto;
+    padding-top: 10%;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 30px;
+    position: top;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    display: inline-flex;
+    transition: 0.5s;
+}
+
+.sidenav a:hover{
+    color: green;
+    text-decoration: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+
+/*Main body construction info - Buttons, box styles, etc */
+
+.mainBody {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 513px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.pagebutton {
+    position: relative;
+    margin: auto;
+    bottom: 10px;
+    width: 160px;
+    height: 70px;
+    background-color: yellowgreen;
+    border-style: solid;
+    border-color: green;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+/*linkButton on order page*/
+.linkButton {
+    position: relative;
+    margin: auto;
+    bottom: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    border-style: solid;
+    border-color: green;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.btn:hover {
+    color: yellowgreen;
+    border-color: yellowgreen;
+}
+
+/*Impact page / form styling */
+
+.form {
+    background-color: yellowgreen;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.form-box{
+    display: flex;
+    justify-content: center;
+}
+
+.form-popup {   
+    z-index: 9;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: yellowgreen;
+    padding: 15px;
+    text-align: center;
+}
+
+.form-popup-results {
+    margin-top: 50px;
+    width: 400px;
+    position: absolute;
+    display: none;
+    font-size: 18px;
+}
+
+/*About page */
+
+.aboutFont {
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.boxA {
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    text-align: center;
+}
+
+.boxB {
+    width: 300px;
+    height: 300px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.boxC {
+    width: 300px;
+    height: 150px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#green {
+    background-image: url(green.png);
+}
+
+#orange {
+    background-image: url(orange.png);
+}
+
+#blue {
+    background-image: url(blue.png);
+}
+
+/*Contact page*/
+.contact {
+    font-family: sans-serif;
+    font-size: 18px;
+    position: relative;
+    margin: 50px auto;
+    background-color: yellowgreen;
+    padding: 15px;
+    padding-bottom: 10px;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Social Media Icon Styling & Footer */
+.fab {
+    padding: 20px;
+    font-size: 50px;
+    width: auto;
+    border-radius: 15%;
+    cursor: pointer;
+    color:blue;
+    text-decoration: none;
+}
+
+.fab:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.fa-twitter {
+    color: green;
+    }
+
+.fa-facebook-f {
+    color: green;
+    }
+
+.fa-instagram {
+    color: green;
+    }
+
+.liFixed {
+    float: right;
+    overflow: hidden;
+    }
+
+.footer {
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
